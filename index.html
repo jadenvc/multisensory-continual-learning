@@ -32,6 +32,9 @@
         <span class="title-p1">Multisensory Continual Learning:</span>
         <span class="title-p2">Adapting Pretrained Visuomotor Policies to Force</span>
       </h1>
+      <div class="pub-links hero-links">
+        <a href="https://arxiv.org/abs/2606.30988" target="_blank" rel="noopener">View on ArXiv</a>
+      </div>
       <div class="hero-authors">
         <a href="https://jadenvc.github.io/" target="_blank" rel="noopener">Jaden Clark</a>,
         <a href="https://changhaowang.github.io/" target="_blank" rel="noopener">Changhao Wang</a>,
@@ -44,7 +47,7 @@
       </div>
       <div class="hero-affiliation">Stanford University</div>
       <figure class="paper-figure hero-figure">
-        <video autoplay loop muted playsinline style="width:calc(100% + 12px); margin-left:-6px; display:block;">
+        <video id="hero-teaser-video" autoplay loop muted playsinline preload="auto" style="width:calc(100% + 12px); margin-left:-6px; display:block;">
           <source src="assets/intro.mp4" type="video/mp4">
         </video>
       </figure>
@@ -56,16 +59,7 @@
         </ul>
         <p><span class="muse-gradient">MuSe</span> provides a <strong><em>scalable pathway</em></strong> to training large-scale multisensory robot policies and world models with practical data composition: large amounts of visual pretraining data, robot vision-action data, and a small amount of diverse multisensory data such as force, tactile, or audio.</p>
       </div>
-      <div class="pub-links anon-links">
-        <a class="btn-disabled" aria-disabled="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-          Paper withheld
-        </a>
-        <a class="btn-disabled" aria-disabled="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-          Code withheld
-        </a>
-      </div>
+
     </div>
   </section>
 
@@ -627,6 +621,16 @@
     </div>
   </section>
 
+  <section id="acknowledgements" class="content-section">
+    <div class="section-inner narrow">
+      <h2 class="section-heading reveal">Acknowledgements</h2>
+      <div class="reveal">
+        <p>Jaden Clark is supported by the Knight-Hennessy Fellowship and the NSF Graduate Research Fellowships Program (GRFP). This work was supported in part by the NSF Award #2143601, #2037101, and #2132519, Toyota Research Institute, Amazon, Stanford System-X, Stanford HAI Center.</p>
+        <p>We would like to thank Mandi Zhao and Maximilian Du for presentation feedback as well as all members of the REAL lab at Stanford for their detailed feedback on paper drafts and experiment directions. The views and conclusions contained herein are those of the authors and should not be interpreted as necessarily representing the official policies, either expressed or implied, of the sponsors.</p>
+      </div>
+    </div>
+  </section>
+
   <footer class="site-footer">
     <p>Stanford University project page for review.</p>
   </footer>
@@ -674,6 +678,47 @@
     }, { threshold: 0.12 });
 
     document.querySelectorAll('.reveal').forEach(element => revealObserver.observe(element));
+
+    const heroTeaserVideo = document.getElementById('hero-teaser-video');
+    if (heroTeaserVideo) {
+      const setHeroPlaybackRate = () => {
+        heroTeaserVideo.defaultPlaybackRate = 0.85;
+        heroTeaserVideo.playbackRate = 0.85;
+      };
+      const skipIntro = () => {
+        if (heroTeaserVideo.currentTime < 2.5 && heroTeaserVideo.duration > 2.5) {
+          heroTeaserVideo.currentTime = 2.5;
+        }
+      };
+      setHeroPlaybackRate();
+      heroTeaserVideo.addEventListener('loadedmetadata', () => {
+        skipIntro();
+        setHeroPlaybackRate();
+      });
+      heroTeaserVideo.addEventListener('play', () => {
+        skipIntro();
+        setHeroPlaybackRate();
+      });
+      heroTeaserVideo.addEventListener('ratechange', setHeroPlaybackRate);
+      setTimeout(() => {
+        skipIntro();
+        setHeroPlaybackRate();
+      }, 100);
+      setTimeout(() => {
+        skipIntro();
+        setHeroPlaybackRate();
+      }, 500);
+      setTimeout(() => {
+        skipIntro();
+        setHeroPlaybackRate();
+      }, 1000);
+      const heroPlaybackForceInterval = setInterval(() => {
+        if (heroTeaserVideo.playbackRate !== 0.85) {
+          heroTeaserVideo.playbackRate = 0.85;
+        }
+      }, 250);
+      setTimeout(() => clearInterval(heroPlaybackForceInterval), 3000);
+    }
 
     function rolloutVideoSpeed(video) {
       const panel = video.closest('[data-rollout-panel]');
