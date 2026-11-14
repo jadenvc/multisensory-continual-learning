@@ -1,0 +1,394 @@
+{
+  "assets/method.mp4": {
+    "src": "assets/web/method.mp4",
+    "poster": "assets/web/posters/method.jpg",
+    "originalSrc": "assets/method.mp4",
+    "playbackRate": 1,
+    "width": 1280,
+    "height": 496
+  },
+  "assets/paper-figures/crossmodal.mp4": {
+    "src": "assets/web/paper-figures/crossmodal.mp4",
+    "poster": "assets/web/posters/paper-figures/crossmodal.jpg",
+    "originalSrc": "assets/paper-figures/crossmodal.mp4",
+    "playbackRate": 1,
+    "width": 1280,
+    "height": 686
+  },
+  "assets/rollouts/forward/vase_wiping/ours_orange.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/ours_orange.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/ours_orange.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/ours_orange.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/intro.mp4": {
+    "src": "assets/web/intro.mp4",
+    "poster": "assets/web/posters/intro.jpg",
+    "originalSrc": "assets/intro.mp4",
+    "playbackRate": 1,
+    "width": 1280,
+    "height": 392
+  },
+  "assets/rollouts/forward/vase_wiping/ours_middle.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/ours_middle.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/ours_middle.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/ours_middle.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/vase_wiping/muse_big_eraser_success.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/muse_big_eraser_success.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/muse_big_eraser_success.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/muse_big_eraser_success.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/vase_wiping/ours_big.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/ours_big.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/ours_big.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/ours_big.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/vase_wiping/no_ft_weak.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/no_ft_weak.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/no_ft_weak.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/no_ft_weak.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/vase_wiping/no_pretrain_fail.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/no_pretrain_fail.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/no_pretrain_fail.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/no_pretrain_fail.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/vase_wiping/no_pretrain_orange_ood.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/no_pretrain_orange_ood.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/no_pretrain_orange_ood.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/no_pretrain_orange_ood.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/vase_wiping/no_ft_stuck.mp4": {
+    "src": "assets/web/rollouts/forward/vase_wiping/no_ft_stuck.mp4",
+    "poster": "assets/web/posters/rollouts/forward/vase_wiping/no_ft_stuck.jpg",
+    "originalSrc": "assets/rollouts/forward/vase_wiping/no_ft_stuck.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/ours_back_tilt.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/ours_back_tilt.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/ours_back_tilt.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/ours_back_tilt.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/ours_forward_tilt.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/ours_forward_tilt.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/ours_forward_tilt.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/ours_forward_tilt.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/ours_back.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/ours_back.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/ours_back.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/ours_back.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/no_pretrain_misses.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/no_pretrain_misses.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/no_pretrain_misses.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/no_pretrain_misses.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/no_ft_back_fall.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/no_ft_back_fall.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/no_ft_back_fall.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/no_ft_back_fall.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/no_pretrain_stuck.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/no_pretrain_stuck.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/no_pretrain_stuck.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/no_pretrain_stuck.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/pick_and_place/ours_distractor.mp4": {
+    "src": "assets/web/rollouts/forward/pick_and_place/ours_distractor.mp4",
+    "poster": "assets/web/posters/rollouts/forward/pick_and_place/ours_distractor.jpg",
+    "originalSrc": "assets/rollouts/forward/pick_and_place/ours_distractor.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/peg_insertion/no_ft_tall_stuck.mp4": {
+    "src": "assets/web/rollouts/forward/peg_insertion/no_ft_tall_stuck.mp4",
+    "poster": "assets/web/posters/rollouts/forward/peg_insertion/no_ft_tall_stuck.jpg",
+    "originalSrc": "assets/rollouts/forward/peg_insertion/no_ft_tall_stuck.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/pick_and_place/ours_lr.mp4": {
+    "src": "assets/web/rollouts/forward/pick_and_place/ours_lr.mp4",
+    "poster": "assets/web/posters/rollouts/forward/pick_and_place/ours_lr.jpg",
+    "originalSrc": "assets/rollouts/forward/pick_and_place/ours_lr.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/pick_and_place/ours_red.mp4": {
+    "src": "assets/web/rollouts/forward/pick_and_place/ours_red.mp4",
+    "poster": "assets/web/posters/rollouts/forward/pick_and_place/ours_red.jpg",
+    "originalSrc": "assets/rollouts/forward/pick_and_place/ours_red.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/pick_and_place/no_pretrain_distractor_fail.mp4": {
+    "src": "assets/web/rollouts/forward/pick_and_place/no_pretrain_distractor_fail.mp4",
+    "poster": "assets/web/posters/rollouts/forward/pick_and_place/no_pretrain_distractor_fail.jpg",
+    "originalSrc": "assets/rollouts/forward/pick_and_place/no_pretrain_distractor_fail.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/pick_and_place/ours_easy.mp4": {
+    "src": "assets/web/rollouts/forward/pick_and_place/ours_easy.mp4",
+    "poster": "assets/web/posters/rollouts/forward/pick_and_place/ours_easy.jpg",
+    "originalSrc": "assets/rollouts/forward/pick_and_place/ours_easy.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/forward/pick_and_place/no_pretrain_red.mp4": {
+    "src": "assets/web/rollouts/forward/pick_and_place/no_pretrain_red.mp4",
+    "poster": "assets/web/posters/rollouts/forward/pick_and_place/no_pretrain_red.jpg",
+    "originalSrc": "assets/rollouts/forward/pick_and_place/no_pretrain_red.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/ours_back_right.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/ours_back_right.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/ours_back_right.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/ours_back_right.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/ours_back.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/ours_back.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/ours_back.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/ours_back.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/ours_pickup.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/ours_pickup.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/ours_pickup.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/ours_pickup.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/ours_middle_back.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/ours_middle_back.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/ours_middle_back.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/ours_middle_back.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/pretrain_stuck.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/pretrain_stuck.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/pretrain_stuck.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/pretrain_stuck.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/no_er_back.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/no_er_back.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/no_er_back.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/no_er_back.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/no_er_middle.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/no_er_middle.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/no_er_middle.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/no_er_middle.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/whiteboard_wiping/pretrain_not_hard.mp4": {
+    "src": "assets/web/rollouts/backward/whiteboard_wiping/pretrain_not_hard.mp4",
+    "poster": "assets/web/posters/rollouts/backward/whiteboard_wiping/pretrain_not_hard.jpg",
+    "originalSrc": "assets/rollouts/backward/whiteboard_wiping/pretrain_not_hard.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/ours_red_green.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/ours_red_green.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/ours_red_green.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/ours_red_green.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/ours_rpg_good.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/ours_rpg_good.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/ours_rpg_good.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/ours_rpg_good.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/ours_purple2.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/ours_purple2.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/ours_purple2.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/ours_purple2.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/ours_purple.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/ours_purple.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/ours_purple.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/ours_purple.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/pretrain_miss.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/pretrain_miss.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/pretrain_miss.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/pretrain_miss.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/no_er_twist.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/no_er_twist.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/no_er_twist.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/no_er_twist.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/pretrain_purple_fail.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/pretrain_purple_fail.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/pretrain_purple_fail.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/pretrain_purple_fail.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/peg_insertion/no_er_purple_fail.mp4": {
+    "src": "assets/web/rollouts/backward/peg_insertion/no_er_purple_fail.mp4",
+    "poster": "assets/web/posters/rollouts/backward/peg_insertion/no_er_purple_fail.jpg",
+    "originalSrc": "assets/rollouts/backward/peg_insertion/no_er_purple_fail.mp4",
+    "playbackRate": 1,
+    "width": 640,
+    "height": 360
+  },
+  "assets/rollouts/backward/pick_place_new/muse_pepper_pot_forward.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/muse_pepper_pot_forward.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/muse_pepper_pot_forward.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/muse_pepper_pot_forward.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/muse_pepper_pot_lr.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/muse_pepper_pot_lr.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/muse_pepper_pot_lr.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/muse_pepper_pot_lr.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/muse_pepper_plate_lr.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/muse_pepper_plate_lr.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/muse_pepper_plate_lr.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/muse_pepper_plate_lr.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/muse_pepper_plate_lr2.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/muse_pepper_plate_lr2.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/muse_pepper_plate_lr2.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/muse_pepper_plate_lr2.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/no_er_pepper_pot_fail.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/no_er_pepper_pot_fail.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/no_er_pepper_pot_fail.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/no_er_pepper_pot_fail.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/no_er_pepper_pot_fail2.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/no_er_pepper_pot_fail2.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/no_er_pepper_pot_fail2.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/no_er_pepper_pot_fail2.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/no_er_pepper_plate_fail_forward.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/no_er_pepper_plate_fail_forward.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/no_er_pepper_plate_fail_forward.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/no_er_pepper_plate_fail_forward.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/rollouts/backward/pick_place_new/no_er_pepper_plate_lr_fail.mp4": {
+    "src": "assets/web/rollouts/backward/pick_place_new/no_er_pepper_plate_lr_fail.mp4",
+    "poster": "assets/web/posters/rollouts/backward/pick_place_new/no_er_pepper_plate_lr_fail.jpg",
+    "originalSrc": "assets/rollouts/backward/pick_place_new/no_er_pepper_plate_lr_fail.mp4",
+    "playbackRate": 1,
+    "width": 960,
+    "height": 540
+  },
+  "assets/wbw_targets.mp4": {
+    "src": "assets/web/wbw_targets.mp4",
+    "poster": "assets/web/posters/wbw_targets.jpg",
+    "originalSrc": "assets/wbw_targets.mp4",
+    "playbackRate": 1,
+    "width": 1134,
+    "height": 1080
+  }
+}
