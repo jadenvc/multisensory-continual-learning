@@ -18,8 +18,7 @@
     (() => {
       let saved;
       try { saved = localStorage.getItem('project-website-color-scheme'); } catch { /* Storage can be unavailable in local previews. */ }
-      document.documentElement.dataset.colorScheme = saved === 'light' || saved === 'dark'
-        ? saved : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.colorScheme = 'light'; // Site is always shown in light mode.
     })();
   </script>
   <style>
@@ -207,7 +206,9 @@ main { min-width: 0; }
 }
 .wordmark { display: inline-flex; gap: 10px; align-items: center; font: 500 16px/1.4 var(--sans); letter-spacing: -.8px; }
 .project-heading { position: relative; }
-.theme-toggle { position: absolute; top: 3px; right: 0; display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid var(--rule); border-radius: 50%; color: var(--muted); background: transparent; cursor: pointer; }
+.theme-toggle { display: none !important; }
+.gif-video { pointer-events: none; }
+.theme-toggle-unused { position: absolute; top: 3px; right: 0; display: grid; place-items: center; width: 32px; height: 32px; padding: 0; border: 1px solid var(--rule); border-radius: 50%; color: var(--muted); background: transparent; cursor: pointer; }
 .theme-toggle:hover { color: var(--ink); background: var(--soft); border-color: var(--muted); }
 .theme-toggle svg { width: 16px; height: 16px; }
 .theme-toggle .theme-sun, html[data-color-scheme="dark"] .theme-toggle .theme-moon { display: none; }
@@ -539,6 +540,32 @@ document.addEventListener('DOMContentLoaded', () => {
   const renderVideo = (clip) => {
     const figure = element('figure', 'video-figure');
     const video = element('video');
+    if (clip.gif) {
+      // GIF-style clip: no controls, always looping, outside the playback limiter.
+      video.className = 'gif-video';
+      video.muted = true;
+      video.defaultMuted = true;
+      video.playsInline = true;
+      video.loop = true;
+      video.autoplay = true;
+      video.preload = 'auto';
+      video.setAttribute('muted', '');
+      video.setAttribute('playsinline', '');
+      video.width = clip.width;
+      video.height = clip.height;
+      video.style.aspectRatio = `${clip.width} / ${clip.height}`;
+      video.setAttribute('aria-label', clip.alt || clip.title);
+      if (clip.poster) video.poster = clip.poster;
+      video.src = clip.src;
+      figure.append(video);
+      if (clip.title || clip.caption) {
+        const caption = element('figcaption');
+        if (clip.title) caption.append(element('span', '', clip.title));
+        if (clip.caption) caption.append(element('small', '', clip.caption));
+        figure.append(caption);
+      }
+      return figure;
+    }
     video.controls = true;
     video.muted = true;
     video.defaultMuted = true;
@@ -902,7 +929,7 @@ let themePreference;
 try { themePreference = localStorage.getItem('project-website-color-scheme'); } catch { /* Local previews may block storage. */ }
 if (!['light', 'dark'].includes(themePreference)) themePreference = null;
 function applyTheme() {
-  const scheme = themePreference || (systemTheme.matches ? 'dark' : 'light');
+  const scheme = 'light'; // Always light; dark mode and the toggle are disabled.
   document.documentElement.dataset.colorScheme = scheme;
   themeToggle.setAttribute('aria-pressed', String(scheme === 'dark'));
   themeToggle.title = `Switch to ${scheme === 'dark' ? 'light' : 'dark'} mode`;
@@ -947,7 +974,7 @@ window.addEventListener('resize', updateNavigation);
 updateNavigation();
 
 // Keep decoding bounded, and release sources after videos leave the viewport.
-const videos = [...document.querySelectorAll('video')];
+const videos = [...document.querySelectorAll('video:not(.gif-video)')];
 const mediaSettings = window.PAPER_CONTENT.media || {};
 const videoLimit = mediaSettings.pauseOthers ? 1 : (mediaSettings.maxConcurrentVideos ?? 2);
 const videoStates = new Map(videos.map(video => [video, {

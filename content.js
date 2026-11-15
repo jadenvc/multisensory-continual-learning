@@ -114,6 +114,7 @@ window.PAPER_CONTENT = {
     "logos": [],
     "video": {
       "src": "assets/web/intro.mp4",
+      "gif": true,
       "alt": "MuSe multisensory robot manipulation demonstration",
       "title": "",
       "caption": "",
@@ -143,6 +144,7 @@ window.PAPER_CONTENT = {
         "videos": [
           {
             "src": "assets/web/method.mp4",
+      "gif": true,
             "alt": "MuSe method overview",
             "title": "MuSe method overview",
             "caption": "",
