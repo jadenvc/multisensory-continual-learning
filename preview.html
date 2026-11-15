@@ -560,6 +560,10 @@ document.addEventListener('DOMContentLoaded', () => {
       video.style.aspectRatio = `${clip.width} / ${clip.height}`;
       video.setAttribute('aria-label', clip.alt || clip.title);
       if (clip.poster) video.poster = clip.poster;
+      const rate = Number(clip.playbackRate || 1);
+      video.defaultPlaybackRate = rate;
+      video.playbackRate = rate;
+      video.addEventListener('loadedmetadata', () => { video.playbackRate = rate; });
       video.src = clip.src;
       figure.append(video);
       if (clip.title || clip.caption) {

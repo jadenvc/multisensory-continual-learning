@@ -123,7 +123,7 @@ window.PAPER_CONTENT = {
       "height": 392,
       "poster": "assets/web/posters/intro.jpg",
       "originalSrc": "assets/intro.mp4",
-      "playbackRate": 1
+      "playbackRate": 1.5
     }
   },
   "overview": {
@@ -153,7 +153,7 @@ window.PAPER_CONTENT = {
             "height": 496,
             "poster": "assets/web/posters/method.jpg",
             "originalSrc": "assets/method.mp4",
-            "playbackRate": 1
+            "playbackRate": 2
           }
         ]
       },
