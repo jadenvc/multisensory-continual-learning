@@ -25,7 +25,7 @@ window.PAPER_CONTENT = {
   "media": {
     "autoplay": true,
     "pauseOthers": false,
-    "maxConcurrentVideos": 2
+    "maxConcurrentVideos": 24
   },
   "paper": {
     "name": "Multisensory Continual Learning",

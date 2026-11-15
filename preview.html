@@ -581,11 +581,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       return figure;
     }
-    video.controls = true;
+    // Rollouts behave like GIFs: no controls, always looping while on screen.
+    video.controls = false;
     video.muted = true;
     video.defaultMuted = true;
     video.playsInline = true;
-    video.loop = clip.loop === true;
+    video.loop = true;
     video.preload = 'none';
     const autoplay = clip.autoplay ?? content.media?.autoplay ?? true;
     video.dataset.autoplay = String(autoplay);
@@ -1021,6 +1022,7 @@ function prepareVideo(video) {
   applyVideoRate(video);
   const source = video.querySelector('source[data-src]');
   if (!source || source.hasAttribute('src')) return;
+  video.preload = 'auto';
   source.src = source.dataset.src;
   video.load();
 }
@@ -1079,7 +1081,7 @@ function updatePlayback() {
     pauseVideo(video);
     const hidden = document.hidden || !!video.closest('[hidden]');
     if (hidden) releaseVideo(video);
-    else if ((!state.near || (!state.userPaused && video.readyState > 0)) && !state.releaseTimer && video.querySelector('source[src]')) {
+    else if (false && (!state.near || (!state.userPaused && video.readyState > 0)) && !state.releaseTimer && video.querySelector('source[src]')) {
       state.releaseTimer = setTimeout(() => {
         state.releaseTimer = null;
         if (!state.wantPlay) {
@@ -1140,7 +1142,7 @@ if ('IntersectionObserver' in window) {
       if (entry.isIntersecting && !entry.target.closest('[hidden]')) prepareVideo(entry.target);
     }
     schedulePlayback();
-  }, { rootMargin: '200px 0px' });
+  }, { rootMargin: '1200px 0px' });
   const playbackObserver = new IntersectionObserver(entries => {
     for (const entry of entries) {
       const state = videoStates.get(entry.target);
