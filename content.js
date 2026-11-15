@@ -127,12 +127,17 @@ window.PAPER_CONTENT = {
     }
   },
   "overview": {
-    "title": "How do we train multisensory world-action model?",
+    "title": "Q: How do we train a multisensory world-action model?",
     "navTitle": "Overview",
     "paragraphs": [
+      "A: Add new modalities during post-training! We find that strong base models can be quickly adapted to small multisensory datasets without losing their generality.",
       "Adding new sensor modalities is key for contact-rich tasks, but we lack the data to scale multisensory foundation models. What if all our data doesn't need to contain multisensory observations? With MultiSensory World Model (MuSe), multitask visuomotor policies such as VLAs, Video-Action Models, or World-Action Models learn new modalities during finetuning (such as force or tactile) with only a fraction of the pretraining data. We find MuSe:",
-      "improves visual generalization from broad-scale pretraining (forward transfer)",
-      "leverages new modality to improve on pretraining tasks that do not exist in minimal finetuning stage (backward transfer)",
+      {
+        "bullets": [
+          "improves visual generalization from broad-scale pretraining (forward transfer)",
+          "leverages new modality to improve on pretraining tasks that do not exist in minimal finetuning stage (backward transfer)"
+        ]
+      },
       "MuSe provides a scalable pathway to training large-scale multisensory robot policies and world models with practical data composition: large amounts of visual pretraining data, robot vision-action data, and a small amount of diverse multisensory data such as force, tactile, or audio."
     ]
   },
@@ -144,7 +149,7 @@ window.PAPER_CONTENT = {
         "videos": [
           {
             "src": "assets/web/method.mp4",
-      "gif": true,
+            "gif": true,
             "alt": "MuSe method overview",
             "title": "MuSe method overview",
             "caption": "",

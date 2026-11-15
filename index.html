@@ -272,6 +272,10 @@ h2 { font: 600 20px/26px var(--sans); }
 .prose { max-width: var(--reading-width); font: 350 var(--text-size)/var(--text-leading) var(--sans); letter-spacing: 0; }
 .prose a { color: var(--accent); text-decoration: underline; text-underline-offset: 2px; }
 .text-block .prose + .prose { margin-top: var(--block-gap); }
+.bullet-list { margin-bottom: 0; padding-left: 24px; white-space: normal; }
+.bullet-list > li { padding-left: 4px; }
+.bullet-list > li + li { margin-top: 6px; }
+.bullet-list > li::marker { color: var(--accent); }
 .prose mark { color: inherit; background: color-mix(in srgb, var(--accent) 22%, var(--bg)); }
 .ordered-list { margin: 0; padding-left: 24px; font: 350 var(--text-size)/var(--text-leading) var(--sans); }
 .ordered-list > li { padding-left: 4px; }
@@ -732,6 +736,15 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (paragraphs.length) {
       const text = element('div', 'text-block');
       text.append(...paragraphs.map(paragraph => {
+        if (paragraph?.bullets) {
+          const list = element('ul', 'prose bullet-list');
+          list.append(...paragraph.bullets.map(entry => {
+            const item = element('li');
+            appendText(item, entry);
+            return item;
+          }));
+          return list;
+        }
         const node = element('p', 'prose');
         appendText(node, typeof paragraph === 'string' ? paragraph.trim() : paragraph);
         return node;
