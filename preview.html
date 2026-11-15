@@ -258,6 +258,9 @@ h1 { font: 400 32px/1.2 var(--sans); letter-spacing: -.7px; text-wrap: wrap; }
 .contribution > span { white-space: nowrap; }
 .project-teaser, .section { margin-top: var(--section-gap); }
 .project-teaser:empty { display: none; }
+/* Let the teaser spill into the gutter and right margin on wide screens. */
+@media (min-width: 1000px) { .project-teaser { margin-left: -40px; margin-right: -40px; } }
+@media (min-width: 1600px) { .project-teaser { margin-right: -100px; } }
 .section { scroll-margin-top: 24px; }
 .section + .section { margin-top: calc(var(--section-gap) + 16px); }
 .section-heading { margin-bottom: var(--block-gap); }

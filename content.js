@@ -119,8 +119,8 @@ window.PAPER_CONTENT = {
       "title": "",
       "caption": "",
       "loop": true,
-      "width": 1280,
-      "height": 392,
+      "width": 1904,
+      "height": 600,
       "poster": "assets/web/posters/intro.jpg",
       "originalSrc": "assets/intro.mp4",
       "playbackRate": 1.5
