@@ -252,7 +252,7 @@ window.PAPER_CONTENT = {
             "height": 686,
             "poster": "assets/web/posters/paper-figures/crossmodal.jpg",
             "originalSrc": "assets/paper-figures/crossmodal.mp4",
-            "playbackRate": 1
+            "playbackRate": 2
           }
         ]
       }
