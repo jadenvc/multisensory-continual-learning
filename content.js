@@ -154,11 +154,11 @@ window.PAPER_CONTENT = {
             "title": "MuSe method overview",
             "caption": "",
             "loop": true,
-            "width": 1280,
-            "height": 496,
+            "width": 2560,
+            "height": 994,
             "poster": "assets/web/posters/method.jpg",
             "originalSrc": "assets/method.mp4",
-            "playbackRate": 2
+            "playbackRate": 1
           }
         ]
       },
