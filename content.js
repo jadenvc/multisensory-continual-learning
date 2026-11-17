@@ -130,7 +130,9 @@ window.PAPER_CONTENT = {
     "title": "Q: How do we train a multisensory world-action model?",
     "navTitle": "Overview",
     "paragraphs": [
-      "A: Add new modalities during post-training! We find that strong base models can be quickly adapted to small multisensory datasets without losing their generality.",
+      {
+        "answer": "A: Add new modalities during post-training! We find that strong base models can be quickly adapted to small multisensory datasets without losing their generality."
+      },
       "Adding new sensor modalities is key for contact-rich tasks, but we lack the data to scale multisensory foundation models. What if all our data doesn't need to contain multisensory observations? With MultiSensory World Model (MuSe), multitask visuomotor policies such as VLAs, Video-Action Models, or World-Action Models learn new modalities during finetuning (such as force or tactile) with only a fraction of the pretraining data. We find MuSe:",
       {
         "bullets": [

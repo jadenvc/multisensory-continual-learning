@@ -264,7 +264,7 @@ h1 { font: 400 32px/1.2 var(--sans); letter-spacing: -.7px; text-wrap: wrap; }
 .section { scroll-margin-top: 24px; }
 .section + .section { margin-top: calc(var(--section-gap) + 16px); }
 .section-heading { margin-bottom: var(--block-gap); }
-h2 { font: 600 20px/26px var(--sans); }
+h2, .prose.answer { font: 600 20px/26px var(--sans); }
 .sections > .section:first-child h2 { margin-top: 8px; }
 .section-content, .content-block { display: grid; gap: var(--block-gap); }
 .content-block + .content-block { margin-top: 10px; }
@@ -737,6 +737,7 @@ document.addEventListener('DOMContentLoaded', () => {
     } else if (paragraphs.length) {
       const text = element('div', 'text-block');
       text.append(...paragraphs.map(paragraph => {
+        if (paragraph?.answer) return element('p', 'prose answer', paragraph.answer);
         if (paragraph?.bullets) {
           const list = element('ul', 'prose bullet-list');
           list.append(...paragraph.bullets.map(entry => {
