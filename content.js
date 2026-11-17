@@ -100,7 +100,7 @@ window.PAPER_CONTENT = {
       }
     ],
     "authorNotes": "",
-    "conference": "Conference on Robot Learning 2026\n🏆 CoRL Pretrain to Adapt Spotlight\n🏆 NeurIPS Robot Learning with World Models Best Paper Finalist",
+    "conference": "Conference on Robot Learning 2026\n🏆 CoRL Pretrain to Adapt Spotlight\n🏆 NeurIPS Robot Learning with World Models Best Paper Winner",
     "links": [
       {
         "label": "Paper",
